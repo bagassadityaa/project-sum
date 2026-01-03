@@ -2,10 +2,14 @@
 
 require "functions.php";
 
-
-$id = $_GET["id"];
+$id = (int) $_GET["id"];
+var_dump($id);
 
 $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
+
+if (!isset($_GET['id'])) {
+    die("ID tidak ditemukan.");
+}
 
 if (isset($_POST['submit'])) {
     if (editData($_POST) > 0) {
@@ -49,7 +53,7 @@ if (isset($_POST['submit'])) {
     <div id="navbar"></div>
     <h1 class="justify-center mt-20 mx-auto flex font-bold text-4xl">Edit Data Pembeli</h1>    
 
-    <!-- Form Tambah -->
+    <!-- Form Edit -->
 
     <div class="flex justify-center mt-5 mx-auto py-3 px-4">
         <form action="" method="post">

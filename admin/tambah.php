@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
     <!-- Form Tambah -->
 
     <div class="flex justify-center mt-5 mx-auto py-3 px-4">
-        <form action="" method="post">
+        <form method="post">
             <ul>
                 <li>
                     <label for="tanggal_pesan"> Tanggal Pesan :

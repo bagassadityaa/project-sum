@@ -58,7 +58,7 @@ function editData($data){
     //query insert data
     //id tetap harus dimasukan dengan values pertama ''
     $query = "UPDATE  daftar_pemesanan SET
-                nrp = '$tanggal_pesan',
+                tanggal_pesan = '$tanggal_pesan',
                 nama = '$nama',
                 QTY = '$QTY',
                 pemasukan = '$pemasukan'
