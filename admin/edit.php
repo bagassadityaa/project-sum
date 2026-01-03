@@ -3,7 +3,6 @@
 require "functions.php";
 
 $id = (int) $_GET["id"];
-var_dump($id);
 
 $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
 
