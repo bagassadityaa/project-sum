@@ -17,6 +17,9 @@ function query($query){
 }
 
 
+function editData(){
+
+};
 
 
 function tambahData($data){

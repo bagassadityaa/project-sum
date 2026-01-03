@@ -61,7 +61,7 @@ $pemesanan = query("SELECT * FROM daftar_pemesanan");
         <tr>
             <td class="border py-2 px-4"><?= $i;?></td>
             <td class="border py-2 px-4">
-                <a href="" class="hover:text-[#eda351]">Edit</a> ||
+                <a href="edit.php?id=<?= $pesanan['id'] ?>" class="hover:text-[#eda351]">Edit</a> ||
                 <a href="delete.php?id=<?= $pesanan ['id']?>" class="hover:text-[#eda351]">Delete</a>
             </td>
             <td class="border py-2 px-4"><?= $pesanan['tanggal_pesan'] ?></td>
