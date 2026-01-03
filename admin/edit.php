@@ -55,13 +55,13 @@ $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
 
                   <li class="mt-5">
                     <label for="QTY"> Jumlah Pesanan :
-                        <input type="text" name="qty" id="QTY" class="w-full border-1 border-slate-800 rounded-lg hover:border-slate-500 px-2" required>
+                        <input type="text" name="qty" id="QTY" class="w-full border-1 border-slate-800 rounded-lg hover:border-slate-500 px-2" required value="<?= $pelanggan['QTY']?>">
                     </label>
                 </li>
                 
                  <li class="mt-5">
                     <label for="Pemasukan"> Pemasukan :
-                        <input type="text" name="pemasukan" id="Pemasukan" class="w-full border-1 border-slate-800 rounded-lg hover:border-slate-500 px-2" required>
+                        <input type="text" name="pemasukan" id="Pemasukan" class="w-full border-1 border-slate-800 rounded-lg hover:border-slate-500 px-2" required value="<?= $pelanggan['Pemasukan']?>">
                     </label>
                 </li>
             </ul>
