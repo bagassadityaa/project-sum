@@ -17,11 +17,6 @@ function query($query){
 }
 
 
-function editData(){
-
-};
-
-
 function tambahData($data){
     global $conn;
     //ambil data dari setiap elemen pada form
@@ -51,8 +46,30 @@ function hapus($id){
     return mysqli_affected_rows($conn);
 }
 
+function editData($data){
+     global $conn;
+    //ambil data dari setiap elemen pada form
+    $id = $data['id'];
+    $tanggal_pesan = htmlspecialchars($data['tanggal_pesan']);
+    $nama = htmlspecialchars($data['nama']);
+    $QTY = htmlspecialchars($data['qty']);
+    $pemasukan = htmlspecialchars($data['pemasukan']);
 
+    //query insert data
+    //id tetap harus dimasukan dengan values pertama ''
+    $query = "UPDATE  daftar_pemesanan SET
+                nrp = '$tanggal_pesan',
+                nama = '$nama',
+                QTY = '$QTY',
+                pemasukan = '$pemasukan'
+                WHERE id = $id
+                ";
 
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+
+}
 
 
 

@@ -7,7 +7,20 @@ $id = $_GET["id"];
 
 $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
 
-
+if (isset($_POST['submit'])) {
+    if (editData($_POST) > 0) {
+        echo "
+        <script>
+            alert('Data berhasil diubah!');
+            document.location.href = 'admin.php';
+        </script>";
+    } else {
+        echo "
+        <script>
+            alert('Data gagal diubah!');
+        </script>";
+    }
+}
 
 ?>
 
@@ -40,6 +53,7 @@ $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
 
     <div class="flex justify-center mt-5 mx-auto py-3 px-4">
         <form action="" method="post">
+            <input type="hidden" name="id" value="<?= $pelanggan['id'] ?>">
             <ul>
                 <li>
                     <label for="tanggal_pesan"> Tanggal Pesan :
