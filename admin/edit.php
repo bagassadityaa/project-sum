@@ -6,9 +6,7 @@ $id = (int) $_GET["id"];
 
 $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
 
-if (!isset($_GET['id'])) {
-    die("ID tidak ditemukan.");
-}
+// function 
 
 if (isset($_POST['submit'])) {
     if (editData($_POST) > 0) {
