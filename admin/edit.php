@@ -5,6 +5,7 @@ require "functions.php";
 $id = (int) $_GET["id"];
 
 $pelanggan = query("SELECT * FROM daftar_pemesanan WHERE id = $id")[0];
+// mengembalikan array numeric maka daripada itu dikasih indeks 0 untuk mengaksesnya
 
 // function 
 

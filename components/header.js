@@ -21,9 +21,6 @@ document.addEventListener("DOMContentLoaded",  () => {
                         <a class="py-1 px-4 bg-[#eda351] text-white rounded-sm font-semibold text-sm hover:text-slate-700 hover:bg-slate-50" href="login.php">
                             Login
                         </a>
-                           <a class="py-1 px-4 bg-[#eda351] text-white rounded-sm font-semibold text-sm hover:text-slate-700 hover:bg-slate-50">
-                            Daftar
-                        </a>
                     </div>
 
 
