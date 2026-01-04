@@ -59,7 +59,7 @@
       </p>
     </header>
 
-    <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <li>
         <a href="#" class="group block overflow-hidden">
           <img src="img/product1.png" alt="" class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]">
@@ -111,7 +111,117 @@
   </div>
 </section>
 
+<!-- Review Section -->
 
+<div class="max-w-7xl mx-auto">
+<article class="rounded-xl bg-white border border-gray-100">
+  <div class="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-4">
+    <!-- Grid 1 -->
+  <div class="flex col-start-1 gap-4 p-4 sm:p-6 lg:p-8">
+    <a href="#" class="block shrink-0">
+      <img alt="" src="img/2.png" class="size-14 rounded-xl object-cover">
+    </a>
+
+    <div>
+      <h3 class="font-medium sm:text-lg">
+        <a href="#" class="hover:underline"> Review </a>
+      </h3>
+
+      <p class="line-clamp-2 text-sm text-gray-700">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium
+        temporibus iure delectus ut totam natus nesciunt ex?
+      </p>
+
+      <div class="mt-2 sm:flex sm:items-center sm:gap-2">
+        <p class="hidden sm:block sm:text-xs sm:text-gray-500">
+          Posted by
+          <a href="#" class="font-medium underline hover:text-gray-700"> John </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Grid 2 -->
+  <div class="flex col-start-2 gap-4 p-4 sm:p-6 lg:p-8">
+    <a href="#" class="block shrink-0">
+      <img alt="" src="img/2.png" class="size-14 rounded-xl object-cover">
+    </a>
+
+    <div>
+      <h3 class="font-medium sm:text-lg">
+        <a href="#" class="hover:underline"> Review </a>
+      </h3>
+
+      <p class="line-clamp-2 text-sm text-gray-700">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium
+        temporibus iure delectus ut totam natus nesciunt ex?
+      </p>
+
+      <div class="mt-2 sm:flex sm:items-center sm:gap-2">
+        <p class="hidden sm:block sm:text-xs sm:text-gray-500">
+          Posted by
+          <a href="#" class="font-medium underline hover:text-gray-700"> John </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+<!-- Grid 3 -->
+  <div class="flex col-start-3 gap-4 p-4 sm:p-6 lg:p-8">
+    <a href="#" class="block shrink-0">
+      <img alt="" src="img/2.png" class="size-14 rounded-xl object-cover">
+    </a>
+
+    <div>
+      <h3 class="font-medium sm:text-lg">
+        <a href="#" class="hover:underline"> Review </a>
+      </h3>
+
+      <p class="line-clamp-2 text-sm text-gray-700">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium
+        temporibus iure delectus ut totam natus nesciunt ex?
+      </p>
+
+      <div class="mt-2 sm:flex sm:items-center sm:gap-2">
+        <p class="hidden sm:block sm:text-xs sm:text-gray-500">
+          Posted by
+          <a href="#" class="font-medium underline hover:text-gray-700"> John </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Grid 4 -->
+<div class="flex col-start-4 gap-4 p-4 sm:p-6 lg:p-8">
+    <a href="#" class="block shrink-0">
+      <img alt="" src="img/2.png" class="size-14 rounded-xl object-cover">
+    </a>
+
+    <div>
+      <h3 class="font-medium sm:text-lg">
+        <a href="#" class="hover:underline"> Review </a>
+      </h3>
+
+      <p class="line-clamp-2 text-sm text-gray-700">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium
+        temporibus iure delectus ut totam natus nesciunt ex?
+      </p>
+
+      <div class="mt-2 sm:flex sm:items-center sm:gap-2">
+        <p class="hidden sm:block sm:text-xs sm:text-gray-500">
+          Posted by
+          <a href="#" class="font-medium underline hover:text-gray-700"> John </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- \ -->
+
+  </div>
+</article>
+</div>
+
+
+<div class="my-62"></div>
 
 
   </body>
