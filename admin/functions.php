@@ -17,6 +17,20 @@ function query($query){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function untuk tambah data
 function tambahData($data){
     global $conn;
     //ambil data dari setiap elemen pada form
@@ -39,6 +53,21 @@ function tambahData($data){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// funvtion untuk hapus data
 function hapus($id){
     global $conn;
     mysqli_query($conn, "DELETE FROM daftar_pemesanan WHERE id = $id");
@@ -46,6 +75,23 @@ function hapus($id){
     return mysqli_affected_rows($conn);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function untuk edit data
 function editData($data){
      global $conn;
     //ambil data dari setiap elemen pada form
