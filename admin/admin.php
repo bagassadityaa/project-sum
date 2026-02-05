@@ -4,9 +4,13 @@ require ("functions.php");
 
 $pemesanan = query("SELECT * FROM daftar_pemesanan");
 
+if( isset($_POST['cari']) ) {
+    $pemesanan = cari($_POST['keyword']);
+};
+
+
 
 ?>
-
 
 
 
@@ -42,6 +46,21 @@ $pemesanan = query("SELECT * FROM daftar_pemesanan");
      <div class="flex justify-center mt-20">
     <h1 class="font-bold text-3xl">Daftar Pelanggan</h1>
     </div>
+
+    <!-- Form Pencarian -->
+     <div class="flex justify-center mt-10">
+        <form action="" method="post">
+        
+                <input type="text" name="keyword" class="border-black border-1 rounded-lg px-2" placeholder="Cari Pelanggan" autocomplete="off">
+            
+           <button class="rounded-xl py-1 px-4 bg-[#eda351] text-white hover:scale-110" type="submit" name="cari">
+            🔍
+           </button>  
+        </form>
+     </div>
+
+
+
      <div class="mt-20 flex justify-center">
     <br>
     <table border="1" cellpadding="10" cellspacing="0" class="border border-black">

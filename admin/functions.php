@@ -120,6 +120,24 @@ function editData($data){
 
 
 
+// function untuk search
+function cari($keyword){
+    $query = "SELECT * FROM daftar_pemesanan
+                WHERE 
+                nama LIKE '%$keyword%' 
+                ";
+    return query($query);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
